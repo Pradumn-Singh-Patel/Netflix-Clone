@@ -13,6 +13,7 @@
 
 body {
   font-family: sans-serif;
+  text-decoration: none;
   background: #000;
 }
 
@@ -53,7 +54,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 93vh;
+  height: 100vh;
   position: relative;
   background: url("../assets/background.jpg") no-repeat center center/cover;
 }
@@ -73,20 +74,18 @@ img {
 .title {
   z-index: 2;
   position: relative;
-  /* height: 6.2rem; */
+
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* background-color: aqua; */
 }
 
 .title img {
   height: 2.6rem;
   width: 8rem;
   margin-left: 5%;
-  /* margin-top: 2%; */
 }
 
 .sign_in {
@@ -99,16 +98,15 @@ img {
   border-radius: 4px;
   margin-right: 5%;
   flex-wrap: wrap;
-  /* transform: translate(-50%, -50%); */
 }
 
 .sign_in a {
+  text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
 }
 
 .content {
-  /* background-color: yellow; */
   z-index: 2;
   position: relative;
   display: flex;
@@ -122,6 +120,7 @@ img {
 .content h1 {
   font-size: 3.2rem;
 }
+
 .content p {
   font-size: 1.5rem;
 }
@@ -150,8 +149,159 @@ img {
 
 .email div a {
   font-size: 1.4rem;
+  text-decoration: none;
 }
 
+.line {
+  background-color: rgb(71, 71, 71);
+  height: 1.5vh;
+  width: 100%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card_1,
+.card_2,
+.card_3,
+.card_4 {
+  border-top: 1.4vh rgb(44, 43, 43) solid;
+  height: 28rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card_1 div h1,
+.card_2 div h1,
+.card_3 div h1,
+.card_4 div h1 {
+  font-size: 2.8rem;
+  text-align: left;
+}
+
+.card_1 div p,
+.card_2 div p,
+.card_3 div p,
+.card_4 div p {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.card_1 div img,
+.card_3 div img {
+  height: 25rem;
+  width: 34rem;
+}
+
+.card_1 div video,
+.card_3 div video {
+  position: absolute;
+  z-index: -1;
+}
+
+.card_1 div video {
+  width: 26rem;
+  margin-left: -30rem;
+  margin-top: 4.3rem;
+}
+
+.card_3 div video {
+  width: 22rem;
+  margin-left: -28rem;
+  margin-top: 2rem;
+}
+
+/* .card_1, */
+.card_3 {
+  /* width: 100%;
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 55% 40%;
+  text-align: left; */
+  /* align-items: center; */
+  /* grid-column-gap: 20px; */
+  /* padding: 25px 80px 50px; */
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; */
+}
+
+/* .card_1 img {
+  height: auto;
+  width: 32rem;
+  grid-column: 2/2;
+  grid-row: 1/2;
+} */
+
+.card_3 img {
+  /* height: auto;
+  width: 32rem;
+  grid-column: 2/2;
+  grid-row: 1/2; */
+}
+
+/* .card-video-1,
+.card-video-3 {
+  position: relative;
+  grid-column: 2/2;
+  grid-row: 1/2;
+  z-index: -1;
+} */
+
+/* .card-video-1 {
+  width: 100%;
+  height: 54%;
+  margin-left: 1rem;
+  margin-bottom: 0.8rem;
+} */
+
+/* .card-video-3 {
+  width: 100%;
+  height: 30vh;
+  margin-bottom: 9rem;
+  margin-left: 1rem;
+} */
+
+.card_2,
+.card_4 {
+  /* height: 33rem; */
+
+  /* width: 100%;
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 40% 55%;
+  text-align: left;
+  align-items: center;
+  grid-column-gap: 100px;
+  justify-content: space-around;
+  border-top: 1.5vh rgb(71, 71, 71) solid;
+  padding: 25px 80px 50px; */
+}
+
+.card_2 img,
+.card_4 img {
+  padding-bottom: 2rem;
+  height: 27rem;
+  width: 35rem;
+}
+/* .card-video {
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: baseline;
+  position: absolute;
+  height: auto;
+  width: 25rem;
+  grid-column: 2/2;
+  grid-row: 1/2;
+  z-index: -1;
+  margin-left: 18.4rem;
+  margin-top: 4.7rem;
+} */
 @media (max-width: 900px) {
   .title img {
     width: 6.5rem;
@@ -196,7 +346,27 @@ img {
 }
 
 @media (max-width: 600px) {
+  .top_most {
+    height: 63vh;
+  }
+  .content {
+    height: 40vh;
+  }
   .content h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
+  }
+
+  .content p {
+    font-size: 1.1rem;
+  }
+
+  .content span {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .email input {
+    height: 6.3vh;
+    width: 20rem;
   }
 }
