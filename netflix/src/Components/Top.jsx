@@ -49,8 +49,9 @@ function Top() {
             <div className="text">
               <h1>Enjoy on your TV.</h1>
               <p>
-                Watch on smart TVs, PlayStation, Xbox, <br /> Chromecast, Apple
-                TV, Blu-ray players and <br /> more.
+                Watch on smart TVs, PlayStation, Xbox,{" "}
+                {value > 900 ? <br /> : ""} Chromecast, Apple TV, Blu-ray
+                players and <br /> more.
               </p>
             </div>
             <div className="video">
@@ -58,38 +59,50 @@ function Top() {
                 src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
                 alt="card_1"
               />
-              <video
-                class="card-video-1"
-                autoplay=""
-                playsinline=""
-                muted=""
-                loop=""
-              >
+              <video class="card-video-1" autoPlay playsinline muted loop>
                 <source src={Video_tv} type="video/mp4" />
               </video>
             </div>
           </div>
           <div className="card_2">
-            <img
-              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
-              alt="card_2"
-            />
-            <div className="text">
-              <h1>
-                Download your shows <br /> to watch offline.
-              </h1>
-              <p>
-                Save your favourites easily and always have <br /> something to
-                watch.
-              </p>
-            </div>
+            {value < 900 ? (
+              <>
+                <div className="text">
+                  <h1>Download your shows to watch offline.</h1>
+                  <p>
+                    Save your favourites easily and always have something to
+                    watch.
+                  </p>
+                </div>
+                <img
+                  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+                  alt="card_2"
+                />
+              </>
+            ) : (
+              <>
+                <img
+                  src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+                  alt="card_2"
+                />
+                <div className="text">
+                  <h1>
+                    Download your shows <br /> to watch offline.
+                  </h1>
+                  <p>
+                    Save your favourites easily and always have
+                    <br /> something to watch.
+                  </p>
+                </div>
+              </>
+            )}
           </div>
           <div className="card_3">
             <div className="text">
               <h1>Watch everywhere.</h1>
               <p>
-                Stream unlimited movies and TV shows on <br /> your phone,
-                tablet, laptop, and TV.
+                Stream unlimited movies and TV shows on{" "}
+                {value > 900 ? <br /> : ""} your phone, tablet, laptop, and TV.
               </p>
             </div>
             <div className="video">
@@ -97,13 +110,7 @@ function Top() {
                 src="	https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
                 alt="card_3"
               />
-              <video
-                class="card-video-3"
-                autoplay=""
-                playsinline=""
-                muted=""
-                loop=""
-              >
+              <video class="card-video-3" autoPlay playsinline muted loop>
                 <source
                   src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
                   type="video/mp4"
@@ -112,20 +119,39 @@ function Top() {
             </div>
           </div>
           <div className="card_4">
-            <img
-              src="https://occ-0-3752-3647.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVxdX2WnFSp49eXb1do0euaj-F8upNImjofE77XStKhf5kUHG94DPlTiGYqPeYNtiox-82NWEK0Ls3CnLe3WWClGdiJP.png?r=5cf"
-              alt="card_2"
-            />
-            <div className="text">
-              <h1>
-                Create profiles for <br /> children.
-              </h1>
-              <p>
-                Send children on adventures with their <br /> favourite
-                characters in a space made just for <br /> them—free with your
-                membership.
-              </p>
-            </div>
+            {value < 900 ? (
+              <>
+                <div className="text">
+                  <h1>Create profiles for children.</h1>
+                  <p>
+                    Send children on adventures with their favourite characters
+                    in a space made just for them <br />
+                    —free with your membership.
+                  </p>
+                </div>
+                <img
+                  src="https://occ-0-3752-3647.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVxdX2WnFSp49eXb1do0euaj-F8upNImjofE77XStKhf5kUHG94DPlTiGYqPeYNtiox-82NWEK0Ls3CnLe3WWClGdiJP.png?r=5cf"
+                  alt="card_4"
+                />
+              </>
+            ) : (
+              <>
+                <img
+                  src="https://occ-0-3752-3647.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVxdX2WnFSp49eXb1do0euaj-F8upNImjofE77XStKhf5kUHG94DPlTiGYqPeYNtiox-82NWEK0Ls3CnLe3WWClGdiJP.png?r=5cf"
+                  alt="card_4"
+                />
+                <div className="text">
+                  <h1>
+                    Create profiles for <br /> children.
+                  </h1>
+                  <p>
+                    Send children on adventures with their <br /> favourite
+                    characters in a space made just for <br /> them—free with
+                    your membership.
+                  </p>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </section>

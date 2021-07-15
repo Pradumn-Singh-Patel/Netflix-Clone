@@ -152,12 +152,6 @@ img {
   text-decoration: none;
 }
 
-.line {
-  background-color: rgb(71, 71, 71);
-  height: 1.5vh;
-  width: 100%;
-}
-
 .text {
   display: flex;
   flex-direction: column;
@@ -216,92 +210,13 @@ img {
   margin-top: 2rem;
 }
 
-/* .card_1, */
-.card_3 {
-  /* width: 100%;
-  position: relative;
-  display: inline-grid;
-  grid-template-columns: 55% 40%;
-  text-align: left; */
-  /* align-items: center; */
-  /* grid-column-gap: 20px; */
-  /* padding: 25px 80px 50px; */
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-evenly; */
-}
-
-/* .card_1 img {
-  height: auto;
-  width: 32rem;
-  grid-column: 2/2;
-  grid-row: 1/2;
-} */
-
-.card_3 img {
-  /* height: auto;
-  width: 32rem;
-  grid-column: 2/2;
-  grid-row: 1/2; */
-}
-
-/* .card-video-1,
-.card-video-3 {
-  position: relative;
-  grid-column: 2/2;
-  grid-row: 1/2;
-  z-index: -1;
-} */
-
-/* .card-video-1 {
-  width: 100%;
-  height: 54%;
-  margin-left: 1rem;
-  margin-bottom: 0.8rem;
-} */
-
-/* .card-video-3 {
-  width: 100%;
-  height: 30vh;
-  margin-bottom: 9rem;
-  margin-left: 1rem;
-} */
-
-.card_2,
-.card_4 {
-  /* height: 33rem; */
-
-  /* width: 100%;
-  position: relative;
-  display: inline-grid;
-  grid-template-columns: 40% 55%;
-  text-align: left;
-  align-items: center;
-  grid-column-gap: 100px;
-  justify-content: space-around;
-  border-top: 1.5vh rgb(71, 71, 71) solid;
-  padding: 25px 80px 50px; */
-}
-
 .card_2 img,
 .card_4 img {
   padding-bottom: 2rem;
   height: 27rem;
   width: 35rem;
 }
-/* .card-video {
-  object-fit: contain;
-  display: inline-block;
-  vertical-align: baseline;
-  position: absolute;
-  height: auto;
-  width: 25rem;
-  grid-column: 2/2;
-  grid-row: 1/2;
-  z-index: -1;
-  margin-left: 18.4rem;
-  margin-top: 4.7rem;
-} */
+
 @media (max-width: 900px) {
   .title img {
     width: 6.5rem;
@@ -343,6 +258,30 @@ img {
   .email div a {
     font-size: 1.2rem;
   }
+
+  .card_1,
+  .card_2,
+  .card_3,
+  .card_4 {
+    flex-direction: column;
+    height: 37rem;
+  }
+
+  .card_1 div h1,
+  .card_2 div h1,
+  .card_3 div h1,
+  .card_4 div h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .card_1 div p,
+  .card_2 div p,
+  .card_3 div p,
+  .card_4 div p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 }
 
 @media (max-width: 600px) {
@@ -368,5 +307,60 @@ img {
   .email input {
     height: 6.3vh;
     width: 20rem;
+  }
+
+  .card_1,
+  .card_2,
+  .card_3,
+  .card_4 {
+    flex-direction: column;
+    height: 37rem;
+  }
+
+  .card_1 div h1,
+  .card_2 div h1,
+  .card_3 div h1,
+  .card_4 div h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .card_1 div p,
+  .card_2 div p,
+  .card_3 div p,
+  .card_4 div p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .card_1 div img,
+  .card_3 div img {
+    height: 18rem;
+    width: 23rem;
+  }
+
+  .card_1 div video,
+  .card_3 div video {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .card_1 div video {
+    width: 17em;
+    margin-left: -20rem;
+    margin-top: 3.88rem;
+  }
+
+  .card_3 div video {
+    width: 15rem;
+    margin-left: -19rem;
+    margin-top: 1.7rem;
+  }
+
+  .card_2 img,
+  .card_4 img {
+    padding-bottom: 2rem;
+    height: 19rem;
+    width: 22rem;
   }
 }
