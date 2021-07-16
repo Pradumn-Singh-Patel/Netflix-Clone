@@ -22,13 +22,14 @@ ul {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p {
   color: #fff;
+  text-align: center;
+  font-size: 2.8rem;
+  text-align: left;
+}
+
+.content h1 {
   text-align: center;
 }
 
@@ -117,10 +118,6 @@ img {
   height: 55vh;
 }
 
-.content h1 {
-  font-size: 3.2rem;
-}
-
 .content p {
   font-size: 1.5rem;
 }
@@ -170,14 +167,6 @@ img {
   justify-content: space-evenly;
 }
 
-.card_1 div h1,
-.card_2 div h1,
-.card_3 div h1,
-.card_4 div h1 {
-  font-size: 2.8rem;
-  text-align: left;
-}
-
 .card_1 div p,
 .card_2 div p,
 .card_3 div p,
@@ -215,6 +204,61 @@ img {
   padding-bottom: 2rem;
   height: 27rem;
   width: 35rem;
+}
+
+.question {
+  border-top: 1.4vh rgb(44, 43, 43) solid;
+  height: 19rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 4rem;
+}
+
+.question_1,
+.answer_1 {
+  background-color: rgb(44, 43, 43);
+  color: #f4f4f4;
+  width: 50rem;
+}
+
+.question_1 {
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.6rem;
+}
+
+.question_1 img {
+  height: 1.7rem;
+  width: 1.7rem;
+  margin-right: 2rem;
+}
+
+.cancel {
+  transform: rotate(45deg);
+}
+
+.answer_1 {
+  margin-top: -0.4rem;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+.question_1 p,
+.answer_1 p {
+  font-size: 1.6rem;
+  margin-left: 2rem;
+}
+
+.answer_1 p {
+  padding: 2rem 1rem 2rem 0.3rem;
 }
 
 @media (max-width: 900px) {
@@ -267,10 +311,7 @@ img {
     height: 37rem;
   }
 
-  .card_1 div h1,
-  .card_2 div h1,
-  .card_3 div h1,
-  .card_4 div h1 {
+  h1 {
     font-size: 2.5rem;
     text-align: center;
   }
@@ -282,9 +323,14 @@ img {
     font-size: 1.2rem;
     text-align: center;
   }
+
+  .question_1,
+  .answer_1 {
+    width: 40rem;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .top_most {
     height: 63vh;
   }
@@ -354,7 +400,7 @@ img {
   .card_3 div video {
     width: 15rem;
     margin-left: -19rem;
-    margin-top: 1.7rem;
+    margin-top: 1rem;
   }
 
   .card_2 img,
@@ -362,5 +408,38 @@ img {
     padding-bottom: 2rem;
     height: 19rem;
     width: 22rem;
+  }
+
+  .question_1,
+  .answer_1 {
+    width: 30rem;
+  }
+
+  .header h1 {
+    margin: 4rem;
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .question_1,
+  .answer_1 {
+    width: 25rem;
+  }
+
+  .header h1 {
+    margin: 2rem;
+    font-size: 1.7rem;
+  }
+  .question_1 p,
+  .answer_1 p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 435px) {
+  .header h1 {
+    margin: 2rem;
+    font-size: 1.4rem;
   }
 }
