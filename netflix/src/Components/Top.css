@@ -312,7 +312,7 @@ footer p {
 
 @media (max-width: 1070px) {
   .head {
-    margin-left: 6.3rem;
+    margin-left: 4.8rem;
   }
 
   .column div {
@@ -404,7 +404,7 @@ footer p {
 
 @media (max-width: 740px) {
   .head {
-    margin-left: 6.3rem;
+    margin-left: 1.3rem;
   }
 
   .column div {
@@ -524,7 +524,7 @@ footer p {
 
   .head {
     margin-top: 2rem;
-    margin-left: 0.8rem;
+    margin-left: 0.4rem;
   }
 
   .column div {
