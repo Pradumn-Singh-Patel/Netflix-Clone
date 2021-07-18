@@ -1,4 +1,3 @@
-/* Global styles */
 :root {
   --primary-color: #e50914;
   --dark-color: #141414;
@@ -25,8 +24,10 @@ h1,
 p {
   color: #fff;
   text-align: center;
-  font-size: 2.8rem;
   text-align: left;
+}
+h1 {
+  font-size: 2.8rem;
 }
 
 .content h1 {
@@ -206,8 +207,10 @@ img {
   width: 35rem;
 }
 
-.question {
+.question,
+footer {
   border-top: 1.4vh rgb(44, 43, 43) solid;
+  width: 100%;
   height: 19rem;
   display: flex;
   flex-direction: column;
@@ -259,6 +262,62 @@ img {
 
 .answer_1 p {
   padding: 2rem 1rem 2rem 0.3rem;
+}
+
+.bottom p {
+  font-size: 1.2rem;
+  margin: 4rem 0rem 1.2rem 0rem;
+  text-align: center;
+}
+
+.bottom .email {
+  margin-bottom: 4rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer p {
+  color: #757575;
+  font-size: 0.8rem;
+}
+
+.head {
+  margin-top: 5rem;
+  margin-left: 7.8rem;
+  font-size: 1rem;
+}
+
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.column div {
+  margin: 0.5rem 1rem 1rem 7rem;
+}
+
+.column div p {
+  margin: 1rem;
+}
+
+.column_4 {
+  padding-bottom: 2.2rem;
+}
+
+@media (max-width: 1070px) {
+  .head {
+    margin-left: 6.3rem;
+  }
+
+  .column div {
+    margin: 0.5rem 1rem 1rem 4rem;
+  }
 }
 
 @media (max-width: 900px) {
@@ -327,6 +386,29 @@ img {
   .question_1,
   .answer_1 {
     width: 40rem;
+  }
+
+  .head {
+    margin-top: 3rem;
+    margin-left: 3.4rem;
+  }
+
+  .column div {
+    margin: 0.5rem 1rem 1rem 3rem;
+  }
+
+  .column div p {
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 740px) {
+  .head {
+    margin-left: 6.3rem;
+  }
+
+  .column div {
+    margin: 0.5rem 1rem 1rem 1rem;
   }
 }
 
@@ -435,11 +517,28 @@ img {
   .answer_1 p {
     font-size: 1.2rem;
   }
+  .bottom p {
+    margin-top: 3rem;
+    font-size: 0.8rem;
+  }
+
+  .head {
+    margin-top: 2rem;
+    margin-left: 0.8rem;
+  }
+
+  .column div {
+    margin: 0.5rem 1rem 1rem 0.5rem;
+  }
 }
 
-@media (max-width: 435px) {
+@media (max-width: 465px) {
   .header h1 {
     margin: 2rem;
     font-size: 1.4rem;
+  }
+
+  .column div {
+    margin: 0.5rem 0rem 1rem 0rem;
   }
 }

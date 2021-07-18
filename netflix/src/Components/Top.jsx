@@ -2,21 +2,16 @@ import React, { useState } from "react";
 import "./Top.css";
 import Video_tv from "../assets/Video_tv.m4v";
 import Faq from "../Components/Global/Faq";
+import Footer from "../Components/Global/Footer";
 
 function Top() {
   const [value, setvalue] = useState(window.innerWidth);
-  const [height, setheight] = useState("");
+  // const [height, setheight] = useState("");
   window.onresize = displayWindowSize;
   window.onload = displayWindowSize;
   function displayWindowSize() {
     setvalue(window.innerWidth);
   }
-
-  // function clicked() {
-  //   {
-  //     height == "" ? setheight("38rem") : setheight("");
-  //   }
-  // setstyles("block");
 
   return (
     <>
@@ -164,7 +159,7 @@ function Top() {
           </div>
         </div>
       </section>
-      <section className="question" style={{ height: height }}>
+      <section className="question">
         <div className="header">
           <h1>Frequently Asked Questions</h1>
         </div>
@@ -203,6 +198,22 @@ You can also download your favourite shows with the iOS, Android, or Windows 10 
 
 Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see."
         />
+
+        <div className="bottom">
+          <p>
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </p>
+          <div className="email">
+            <input type="email" placeholder="Email address" />
+            <div className="btn">
+              <a href="#" className="get_started">
+                Get Started <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <Footer value={value} />
       </section>
     </>
   );
