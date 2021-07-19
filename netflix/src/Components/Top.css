@@ -625,8 +625,8 @@ select option {
   }
 
   .sign_in a {
-    font-size: 0.7rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 400;
   }
 
   .title .language {
