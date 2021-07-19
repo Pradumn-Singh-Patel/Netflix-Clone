@@ -360,7 +360,7 @@ select option {
   font-size: 1rem;
   color: #757575;
   background-color: #000;
-  height: 3rem;
+  height: 2.8rem;
   border: 0px;
   outline: 0px;
 }
@@ -397,13 +397,12 @@ select option {
 
   .sign_in {
     height: 2rem;
-
     margin-bottom: 26px;
   }
 
   .sign_in a {
     font-size: 1.2rem;
-    font-weight: 100;
+    font-weight: 300;
   }
 
   .top_most::after {
@@ -619,18 +618,25 @@ select option {
     border-top: 1vh rgb(44, 43, 43) solid;
   }
 
-  .left {
-    /* margin-right: 0rem; */
-    /* margin-right: -1rem; */
-  }
-
   .sign_in {
     margin-right: 1rem;
-    width: 4.5rem;
+    width: 4rem;
+    height: 1.6rem;
+  }
+
+  .sign_in a {
+    font-size: 0.7rem;
+    font-weight: 300;
   }
 
   .title .language {
-    margin-right: 1rem;
+    margin-right: 0.7rem;
+    height: 1.6rem;
+  }
+
+  .title .language select,
+  select option {
+    height: 1rem;
   }
 }
 
