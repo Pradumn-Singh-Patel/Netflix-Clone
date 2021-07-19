@@ -1,5 +1,6 @@
 import React from "react";
 import "../Top.css";
+import Language from "./Language";
 
 function Footer(props) {
   console.log(props.value);
@@ -60,6 +61,8 @@ function Footer(props) {
           </>
         )}
       </div>
+      <Language />
+      <p className="para">Netflix India</p>
     </footer>
   );
 }

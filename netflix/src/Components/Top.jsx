@@ -3,10 +3,10 @@ import "./Top.css";
 import Video_tv from "../assets/Video_tv.m4v";
 import Faq from "../Components/Global/Faq";
 import Footer from "../Components/Global/Footer";
+import Language from "./Global/Language";
 
 function Top() {
   const [value, setvalue] = useState(window.innerWidth);
-  // const [height, setheight] = useState("");
   window.onresize = displayWindowSize;
   window.onload = displayWindowSize;
   function displayWindowSize() {
@@ -18,10 +18,13 @@ function Top() {
       <header className="top_most">
         <div className="title">
           <img src="https://i.ibb.co/r5krrdz/logo.png" alt="logo" />
-          <div className="sign_in">
-            <a href="#" className="btn">
-              Sign In
-            </a>
+          <div className="left">
+            <Language />
+            <div className="sign_in">
+              <a href="#" className="btn">
+                Sign In
+              </a>
+            </div>
           </div>
         </div>
         <div className="content">

@@ -76,7 +76,6 @@ img {
 .title {
   z-index: 2;
   position: relative;
-
   width: 100%;
   display: flex;
   align-items: center;
@@ -90,6 +89,38 @@ img {
   margin-left: 5%;
 }
 
+.left {
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.title .language {
+  border: 0.1vh #f4f4f4 solid;
+  margin-right: 2rem;
+  background-color: #000;
+  height: 2.2rem;
+  width: 5.4rem;
+}
+
+.title .language img {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #f4f4f4;
+}
+
+.title .language select,
+select option {
+  font-size: 0.8rem;
+  color: #f4f4f4;
+  height: 2rem;
+  border: 0px;
+  outline: 0px;
+}
+
 .sign_in {
   background-color: #e50914;
   height: 2.2rem;
@@ -98,7 +129,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  margin-right: 5%;
+  margin-right: 3rem;
   flex-wrap: wrap;
 }
 
@@ -221,6 +252,10 @@ footer {
   margin: 4rem;
 }
 
+.faq:hover {
+  cursor: pointer;
+}
+
 .question_1,
 .answer_1 {
   background-color: rgb(44, 43, 43);
@@ -310,8 +345,42 @@ footer p {
   padding-bottom: 2.2rem;
 }
 
+.language {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 0.1vh #757575 solid;
+  margin-left: 8rem;
+  width: 9rem;
+}
+
+select,
+select option {
+  font-size: 1rem;
+  color: #757575;
+  background-color: #000;
+  height: 3rem;
+  border: 0px;
+  outline: 0px;
+}
+
+.language img {
+  background-color: #757575;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.para {
+  margin: 1.5rem 0rem 2rem 8rem;
+  padding-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 1070px) {
-  .head {
+  .head,
+  .language,
+  .para {
     margin-left: 4.8rem;
   }
 
@@ -329,6 +398,7 @@ footer p {
   .sign_in {
     height: 2rem;
     width: 5.1rem;
+    margin-bottom: 26px;
   }
 
   .sign_in a {
@@ -393,6 +463,11 @@ footer p {
     margin-left: 3.4rem;
   }
 
+  .language,
+  .para {
+    margin: 0.5rem 0rem 2rem 3.7rem;
+  }
+
   .column div {
     margin: 0.5rem 1rem 1rem 3rem;
   }
@@ -403,7 +478,9 @@ footer p {
 }
 
 @media (max-width: 740px) {
-  .head {
+  .head,
+  .language,
+  .para {
     margin-left: 1.3rem;
   }
 
@@ -513,10 +590,12 @@ footer p {
     margin: 2rem;
     font-size: 1.7rem;
   }
+
   .question_1 p,
   .answer_1 p {
     font-size: 1.2rem;
   }
+
   .bottom p {
     margin-top: 3rem;
     font-size: 0.8rem;
@@ -530,6 +609,23 @@ footer p {
   .column div {
     margin: 0.5rem 1rem 1rem 0.5rem;
   }
+
+  .card_1,
+  .card_2,
+  .card_3,
+  .card_4,
+  .question,
+  footer {
+    border-top: 1vh rgb(44, 43, 43) solid;
+  }
+
+  .left {
+    margin-right: -2rem;
+  }
+
+  .title .language {
+    margin-right: 1rem;
+  }
 }
 
 @media (max-width: 465px) {
@@ -540,5 +636,11 @@ footer p {
 
   .column div {
     margin: 0.5rem 0rem 1rem 0rem;
+  }
+
+  .head,
+  .language,
+  .para {
+    margin-left: 0.6rem;
   }
 }
