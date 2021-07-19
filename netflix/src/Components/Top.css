@@ -397,7 +397,7 @@ select option {
 
   .sign_in {
     height: 2rem;
-    width: 5.1rem;
+
     margin-bottom: 26px;
   }
 
@@ -620,7 +620,13 @@ select option {
   }
 
   .left {
-    margin-right: -2rem;
+    /* margin-right: 0rem; */
+    /* margin-right: -1rem; */
+  }
+
+  .sign_in {
+    margin-right: 1rem;
+    width: 4.5rem;
   }
 
   .title .language {
