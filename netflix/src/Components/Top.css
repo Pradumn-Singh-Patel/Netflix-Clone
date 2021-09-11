@@ -160,13 +160,15 @@ select option {
 }
 
 .email {
-  height: 9vh;
+  height: 3.5rem;
   display: flex;
 }
 
 .email input {
-  height: 9vh;
+  height: 3.5rem;
   width: 28rem;
+  padding-left: 0.4rem;
+  outline: none;
 }
 
 .email div {
@@ -287,6 +289,11 @@ footer {
   display: flex;
   align-items: center;
   display: none;
+}
+
+.question_1:active .answer_1 {
+  display: block;
+  transition: all 0.5s;
 }
 
 .question_1 p,
@@ -419,7 +426,7 @@ select option {
 
   .email input {
     width: 29rem;
-    height: 8vh;
+    height: 4.3rem;
   }
   .email div {
     height: 2.5rem;
@@ -509,7 +516,7 @@ select option {
   }
 
   .email input {
-    height: 6.3vh;
+    height: 3.4rem;
     width: 20rem;
   }
 
